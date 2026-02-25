@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<script src="task.js"></script>
+</head>
+<body>
+    <script>
+        alert("Welcome");
+        document.write("<h1>Log in Form</h1>");
+        console.log("Password Length -16");
+        
+
+    </script>
+    <from onsubmit="return collectData()">
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" placeholder="enter your name" id="name" name="name"/></td>
+
+                <td><p id="nameErr" style="color:red"></p></td>
+
+
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" placeholder="enter your password" id="pass" name="pass"/></td>
+
+                <td><p id="passErr" style="color:red"></p></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Submit</button>
+                    
+                </td>
+            </tr>
+        </table>
+    </from>
+</body>
+</html>
