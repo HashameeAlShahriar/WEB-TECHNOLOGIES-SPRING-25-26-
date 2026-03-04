@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<script src="task2.js"></script>
+</head>
+<body>
+    <script>
+        alert("Welcome");
+        document.write("<h1>Log in Form</h1>");
+        console.log("Password Length 6");
+        
+
+    </script>
+    <form onsubmit="return collectData()">
+        <table>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" placeholder="enter your email" id="name" name="name" onchange="return GetEmail();"/></td>
+
+                <td><p id="nameErr" style="color:red"></p></td>
+
+
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" placeholder="enter your password" id="pass" name="pass" onchange="return GetPass();"/></td>
+
+
+                <td><p id="passErr" style="color:red"></p></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="return collectData();">Submit</button>
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
