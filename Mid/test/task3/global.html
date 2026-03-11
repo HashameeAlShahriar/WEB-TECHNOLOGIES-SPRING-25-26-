@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Global Tech Connect</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    
+    <div class="from">
+        <h1>Registration</h1>
+        <form id="reg">
+            <table>
+                <tr>
+                    <td><label>Full Name:</label></td>
+                    <td><input type="text" id="fullName" placeholder="Enter full name" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p id="nameErr" style="color:red"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="email" id="email" placeholder="email" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p id="emailErr" style="color:red"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Company:</label></td>
+                    <td><input type="text" id="company" placeholder="Optional"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><label>Attendance:</label></td>
+                    <td>
+                        <input type="radio" name="attendance" value="Virtual" id="v" required> Virtual
+                        <input type="radio" name="attendance" value="In-Person" id="ip" required> In-Person
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p id="typeErr" style="color:red"></p>
+                    </td>
+                </tr>
+            </table>
+            <div class="button">
+                <button type="submit">Register</button>
+            </div>
+
+        </form>
+        <div class="button">
+            <button type="button" id="a" class="b">Show event</button>
+        </div>
+        <div id="event" class="event">
+            <p>Total:<span id="totalCount">0</span></p>
+            <p>virtual:<span id="virtualCount">0</span></p>
+            <p>In person:<span id="inPersonCount">0</span></p>
+        </div>
+    </div>
+    <script src="global.js"></script>
+    
+</body>
+
+</html>

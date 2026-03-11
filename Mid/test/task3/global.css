@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, 'Times New Roman', Times, serif;
+    background:off whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+table { width: 100%; border-collapse: collapse; }
+td { padding: 5px; vertical-align: middle; }
+label { font-size: 15px; font-weight: bold; }
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px ;  
+}
+
+p[id$="Err"] {
+    margin: 0;
+    font-size: 12px;
+    min-height: 15px; 
+}
+.from{
+    background: #fff;
+    padding: 25px 30px;
+    width: 500px;
+    border-radius: 6px;
+}
+.button{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.event{
+    display: none; 
+    background: #f8f9fa;
+    padding: 15px; 
+    margin-top: 15px; 
+    border: 1px ;
+}
