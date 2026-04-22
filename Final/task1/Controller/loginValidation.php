@@ -33,7 +33,7 @@ if(!$password){
 if($hasUsernameError || $hasPasswordError){
     Header("Location: ../View/login.php");
 }else{
-    echo "<h2> wow<h2>";
+    
 }
 
 
